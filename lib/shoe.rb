@@ -3,7 +3,7 @@ class Shoe
   attr_reader :brand
 
 BRANDS = ["Uggs", "Rainbow"]
-BRANDS = [ ]
+
   def initialize(brand)
     @brand = brand
   end
