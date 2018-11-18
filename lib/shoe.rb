@@ -6,10 +6,9 @@ BRANDS = [ ]
 
   def initialize(brand)
     @brand = brand
-  end
-  
-  BRANDS.include?(brand) ? nil : BRANDS << brand
-end
+  if !BRANDS.any?{|b| b == brand}
+    BRANDS << brand
+    end
 
   def cobble
     self.condition = "new"
